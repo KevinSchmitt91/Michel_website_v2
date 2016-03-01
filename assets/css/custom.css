@@ -1,0 +1,323 @@
+/* COLOUR REFERENCES
+	
+	PRIMARY-COLOR:		#f5f5dc
+	SECONDARY-COLOR:	#6a6a6a
+	
+	FONT-WEIGHTS: Lato:	400
+						600
+						700
+	
+	
+*/
+
+/* === GENERAL === */
+
+body {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background: url('../img/background-white.jpg');
+}
+
+
+/* === GLOBAL === */
+
+h1, h2, h3, h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #434343;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 16px;
+	color: #6a6a6a;
+}
+
+.divider-primary {
+	height: 4px;
+	width: 150px;
+	background-color: #f5f5dc;
+	margin: 10px auto;
+}
+
+.divider-secondary {
+	height: 4px;
+	width: 150px;
+	background-color: #6a6a6a;
+	margin: 10px auto;
+}
+
+
+/* === NAVBAR === */
+.navbar {
+	background: url(../img/background-primary.jpg);
+	text-transform: uppercase;
+	border: none;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.25);
+}
+
+.navbar .navbar-nav {
+	left: 20%;
+}
+
+.navbar .navbar-nav > li > a {
+	color: #6a6a6a;
+}
+
+.navbar .navbar-brand {
+	color: #6a6a6a;
+	font-weight: 600;
+}
+
+
+/* === CAROUSEL === */
+
+#entry-content #entry-slider.carousel {
+	margin-top: 50px;
+	height: 600px;
+}
+
+#entry-content #entry-slider.carousel .item {
+    height: 600px;
+}
+
+#entry-content #entry-slider.carousel #slide1:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: url(../img/hero-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+#entry-content #entry-slider.carousel #slide1 {
+    height: 600px;
+}
+
+#entry-content #entry-slider.carousel #slide2:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: url(../img/hero-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+#entry-content #entry-slider.carousel #slide2 {
+    height: 600px;
+}
+
+#entry-content #entry-slider.carousel #slide3:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: url(../img/hero-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+#entry-content #entry-slider.carousel #slide3 {
+    height: 600px;
+}
+
+.carousel-control.left {
+	background-image: none;
+	height: 80px;
+	width: 80px;
+	background-color: #6a6a6a;
+	top: 260px;
+	left: 2%;
+	opacity: 0.6;
+	transition: opacity 0.25s ease;
+}
+
+.carousel-control.left .fa-chevron-left {
+	font-size: 28px;
+	line-height: 80px;
+	color: #f5f5dc;
+}
+
+.carousel-control.left:hover {
+	opacity: 0.8;
+	transition: opacity 0.25s ease;
+}
+
+.carousel-control.right {
+	background-image: none;
+	height: 80px;
+	width: 80px;
+	background-color: #6a6a6a;
+	top: 260px;
+	right: 2%;
+	opacity: 0.6;
+	transition: opacity 0.25s ease;
+}
+
+.carousel-control.right .fa-chevron-right {
+	font-size: 28px;
+	line-height: 80px;
+	color: #f5f5dc;
+}
+
+.carousel-control.right:hover {
+	opacity: 0.8;
+	transition: opacity 0.25s ease;
+}
+
+.carousel-caption {
+	position:static;
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.carousel-caption .carousel-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.carousel-caption .carousel-content .carousel-body {
+	width: 35%;
+	padding: 20px 0;
+	margin: 0 auto;
+	border: 5px solid #f5f5dc;
+	background: url(../img/background-secondary.jpg);
+}
+
+.carousel-caption .carousel-content .carousel-body h1,
+.carousel-caption .carousel-content .carousel-body h2,
+.carousel-caption .carousel-content .carousel-body h3,
+.carousel-caption .carousel-content .carousel-body h4,
+.carousel-caption .carousel-content .carousel-body p {
+	color: white;
+}
+
+.carousel-caption .carousel-content .carousel-body h1 {
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+.carousel-caption .carousel-content .carousel-body h3 {
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 768px ) {
+	.carousel-caption .carousel-content .carousel-body {
+		width: 90%;
+	}
+	
+	.carousel-caption .carousel-content .carousel-body h1,
+	.carousel-caption .carousel-content .carousel-body h2,
+	.carousel-caption .carousel-content .carousel-body h3,
+	.carousel-caption .carousel-content .carousel-body h4,
+	.carousel-caption .carousel-content .carousel-body p {
+		font-size: 1.5em;
+	}
+	
+	.carousel-control.right {
+		top: 15%;
+	}
+	
+	.carousel-control.left {
+		top: 15%;
+	}
+}
+
+
+/* === ENTRY === */
+
+#entry-content #entry-section {
+	padding: 50px 0;
+}
+
+#entry-content #entry-section .entry-header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#entry-content #entry-section .entry-body .entry-about-img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+#entry-content #entry-section.entry-gallery {
+	background: url('../img/background-primary.jpg');
+}
+
+#entry-content .entry-gallery .gallery {
+	padding: 0 0;
+}
+
+#entry-content .entry-gallery .entry-gallery-img {
+	width: 100%;
+	height: auto;
+}
+
+/* === EXTERNAL LINK === */
+#external-link {
+	height: 100px;	
+	text-align: center;
+	background-color: #6a6a6a;
+	width: 100%;
+	display: table;
+	overflow: hidden;
+	background: url(../img/background-secondary.jpg);
+}
+
+#external-link .external-link-body {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#external-link h2, h4 {
+	color: white;
+}
+
+/* === ANIMATIONS === */
+@keyframes scaleOut {
+    from { transform: scale(1.4,1.4); }
+    to   { transform: scale(1.0,1.0); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes scaleOut {
+    from { transform: scale(1.4,1.4); }
+    to   { transform: scale(1.0,1.0); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes scaleOut {
+    from { transform: scale(1.4,1.4); }
+    to   { transform: scale(1.0,1.0); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes scaleOut {
+    from { transform: scale(1.4,1.4); }
+    to   { transform: scale(1.0,1.0); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes scaleOut {
+    from { transform: scale(1.4,1.4); }
+    to   { transform: scale(1.0,1.0); }
+}
+
